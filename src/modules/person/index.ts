@@ -1,5 +1,5 @@
 import store$, { StoreProps, getPersonsAction$ } from './store';
-import inject from '../../util/inject';
+import ReactRxJS from 'react-rxjs';
 import Hello from './view';
 
 type ParentProps = {
@@ -15,4 +15,4 @@ function props(storeProps: StoreProps, parentProps: ParentProps) {
     }
 }
 
-export default inject(store$, props)(Hello);
+export default ReactRxJS.RxInject(store$, props)(Hello);

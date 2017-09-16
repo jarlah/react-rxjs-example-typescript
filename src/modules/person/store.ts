@@ -1,4 +1,4 @@
-import {getPersons, Person}  from '../../models/person';
+import { getPersons, Person }  from '../../models/person';
 import { Subject } from "rxjs/Subject";
 import { Observable } from "rxjs/Observable";
 import { AjaxError } from "rxjs/Rx";
