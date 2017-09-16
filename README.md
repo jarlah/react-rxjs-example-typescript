@@ -2,3 +2,4 @@
 - npm install
 - webpack
 - json-server --watch db.json
+- open http://localhost:3000
