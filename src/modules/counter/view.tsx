@@ -6,8 +6,8 @@ export type ViewProps = {
     dec: () => void
 };
 
-export default class View extends React.Component<ViewProps, {}> {
-    render() {
-        return <span>{this.props.number} <button onClick={this.props.inc}>+</button> <button onClick={this.props.dec}>-</button></span>;
-    }
-}
+const View = (props: ViewProps) => (
+    <span>{this.props.number} <button onClick={this.props.inc}>+</button> <button onClick={this.props.dec}>-</button></span>
+);
+
+export default View;
