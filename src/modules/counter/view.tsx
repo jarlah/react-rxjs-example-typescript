@@ -7,7 +7,7 @@ export type ViewProps = {
 };
 
 const View = (props: ViewProps) => (
-    <span>{this.props.number} <button onClick={this.props.inc}>+</button> <button onClick={this.props.dec}>-</button></span>
+    <span>{props.number} <button onClick={props.inc}>+</button> <button onClick={props.dec}>-</button></span>
 );
 
 export default View;
